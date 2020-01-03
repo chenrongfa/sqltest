@@ -2,11 +2,16 @@ package test.icod.com.sqltest;
 
 import android.app.Application;
 
+import com.facebook.stetho.Stetho;
+
+
 
 
 public class App extends Application {
 
     public static final String TAG = "ObjectBoxExample";
+
+
 
     @Override
     public void onCreate() {
@@ -18,7 +23,11 @@ public class App extends Application {
         }*/
 
         super.onCreate();
+        Stetho.initializeWithDefaults(this);
         ObjectBox.init(this);
+      //  Realm.init(this);
+
+
     }
 
 }

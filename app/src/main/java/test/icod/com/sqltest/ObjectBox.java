@@ -16,13 +16,14 @@ public class ObjectBox {
                 .androidContext(context.getApplicationContext())
                 .name("icleary")
 
+
                 .build();
           //  System.loadLibrary("objectbox-jni");
-      //  if (BuildConfig.DEBUG) {
+      if (BuildConfig.DEBUG) {
             Log.d(App.TAG, String.format("Using ObjectBox %s (%s)",
                     BoxStore.getVersion(), BoxStore.getVersionNative()));
             new AndroidObjectBrowser(boxStore).start(context.getApplicationContext());
-      //  }
+       }
     }
 
     public static BoxStore get() {

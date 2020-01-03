@@ -1,0 +1,29 @@
+时间单位为毫秒
+objectBox
+insert 
+01-03 16:45:56.019 27576-28969/test.icod.com.sqltest E/time:: num::count time: 6715ms
+01-03 10:02:02.580 26934-27119/test.icod.com.sqltest E/time:: num:2000:count time: 13197ms
+01-03 10:03:25.180 26934-27378/test.icod.com.sqltest E/time:: num:3000:count time: 21746ms
+01-03 10:04:20.730 26934-27547/test.icod.com.sqltest E/time:: num:4000:count time: 27989ms
+01-03 10:05:22.515 26934-27718/test.icod.com.sqltest E/time:: num:5000:count time: 37044ms
+01-03 10:07:21.605 26934-28482/test.icod.com.sqltest E/time:: num:10000:count time: 72539ms
+
+query
+1-03 16:51:48.619 30517-30656/test.icod.com.sqltest E/time:: num:10000查询216ms
+
+delete
+01-03 11:35:39.460 11460-11597/test.icod.com.sqltest E/time:: num:5000删除11605ms
+
+01-03 11:37:50.630 11460-11895/test.icod.com.sqltest E/time:: num:10000删除26701ms
+
+一万条数据 只有2m文件数据?
+Realm
+insert
+01-03 16:10:36.824 18961-19155/test.icod.com.sqltest E/time:: num:1000:count time: 9501ms
+01-03 16:11:44.174 18961-19290/test.icod.com.sqltest E/time:: num:2000:count time: 48474ms
+01-03 16:14:17.119 18961-19586/test.icod.com.sqltest E/time:: num:3000:count time: 130121ms
+
+delete
+01-03 16:24:19.079 22032-22843/test.icod.com.sqltest E/time:: num:3000删除55124ms
+
+3000条数据 存储大小384m?
